@@ -12,5 +12,5 @@ Surge module: static [Host] mappings for DoH servers + ByteDance CDN domains use
 
 In Surge: Config → Modules → Add Module → paste URL:
 ```
-https://raw.githubusercontent.com/pafekutoburu/local-dns-resolution/main/Local%20DNS%20Resolution.sgmodule
+https://raw.githubusercontent.com/pafekutoburu/local-dns-resolution/refs/heads/main/Local-DNS-Resolution.sgmodule
 ```
