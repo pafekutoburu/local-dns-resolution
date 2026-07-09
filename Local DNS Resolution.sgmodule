@@ -23,9 +23,9 @@ dns.alidns.com = 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
 doh.pub = 1.12.12.21, 120.53.53.53
 dot.pub = 1.12.12.21, 120.53.53.53
 doh.360.cn = 111.7.73.60, 39.156.84.71, 221.181.72.233
-dot.360.cn = 101.198.198.198, 101.198.199.200, 101.198.192.33, 112.65.69.15
+dot.360.cn = 111.7.73.60, 39.156.84.71, 221.181.72.233
 dns.twnic.tw = 101.101.101.101, 2001:de4::101, 2001:de4::102
-ordns.he.net = 74.82.42.42, 2001:470:20::2
+ordns.he.net = 59.24.3.173, 2001:470:20::2
 
 # --- Google FCM (Firebase Cloud Messaging) ---
 talk.google.com = 108.177.125.188
@@ -124,3 +124,9 @@ alt8-mtalk.google.com = 3.3.3.3
 *.sharejoytech.com = server:223.5.5.5
 *.smtcdns.net = server:223.5.5.5
 *.yo9.com = server:223.5.5.5
+
+# --- Tencent CDN — use AliDNS (223.5.5.5) for domestic CDN resolution ---
+# Cloudflare DoH (1.1.1.1) 解析腾讯域名超时
+*.qq.com = server:223.5.5.5
+*.tencent.com = server:223.5.5.5
+*.gtimg.com = server:223.5.5.5
