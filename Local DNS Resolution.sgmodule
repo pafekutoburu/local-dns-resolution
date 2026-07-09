@@ -1,7 +1,7 @@
 #!name=Local DNS Resolution
 #!desc=Static DNS mappings for DoH servers + ByteDance CDN domains use Volcengine DNS for correct resolution
 #!author=PafekutoBuru
-#!category=PafekutoBuru
+#!category=🟦 PafekutoBuru
 #!homepage=https://github.com/pafekutoburu/local-dns-resolution
 
 # 原理:
