@@ -1,0 +1,30 @@
+#!name=Local DNS Resolution
+#!desc=DoH server static IP mappings — breaks DNS circular dependency for CDN-heavy Chinese sites like Douyin
+#!author=PafekutoBuru
+#!category=PafekutoBuru
+#!homepage=https://github.com/pafekutoburu/local-dns-resolution
+
+# 作用原理:
+# Surge 解析域名时需要先连 DoH 服务器，但连 DoH 服务器本身也需要 DNS 解析 → 循环依赖。
+# [Host] 静态映射让 Surge 直接用 IP 连 DoH，不需要先查 DNS。
+# 配合 DNS-Cloudflare.list → Proxy 规则，DoH 请求通过代理发出，拿到正确的 CDN 解析结果。
+
+[Host]
+# --- Encrypted DNS (DoH/DoT) servers ---
+# Cloudflare
+cloudflare-dns.com = 104.16.249.249, 104.16.248.249
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1, 1.0.0.1
+one.one.one.one = 1.1.1.1, 1.0.0.1
+
+# Google DNS
+dns.google = 8.8.8.8, 8.8.4.4
+
+# AliDNS (国内)
+dns.alidns.com = 223.5.5.5, 223.6.6.6
+
+# DNSPod (国内)
+doh.pub = 1.12.12.21, 120.53.53.53
+dot.pub = 1.12.12.21, 120.53.53.53
+
+# 360 DNS (国内)
+doh.360.cn = 111.7.73.60, 39.156.84.71, 221.181.72.233
