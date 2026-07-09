@@ -1,4 +1,4 @@
-#!name=📍 Local DNS Resolution
+#!name=🧭 Local DNS Resolution
 #!desc=Static DNS mappings for DoH servers + ByteDance CDN domains use Volcengine DNS for correct resolution
 #!author=PafekutoBuru
 #!category=🟦 PafekutoBuru
