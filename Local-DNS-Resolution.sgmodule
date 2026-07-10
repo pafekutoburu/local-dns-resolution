@@ -127,6 +127,34 @@ alt8-mtalk.google.com = 3.3.3.3
 *.tencent.com = server:https://dns.alidns.com/dns-query
 *.gtimg.com = server:https://dns.alidns.com/dns-query
 
+# --- Alibaba / Alipay — use AliDNS DoH for domestic CDN resolution (encrypted) ---
+*.alicdn.com = server:https://dns.alidns.com/dns-query
+*.aliyuncs.com = server:https://dns.alidns.com/dns-query
+*.aliyun.com = server:https://dns.alidns.com/dns-query
+*.alibaba.com = server:https://dns.alidns.com/dns-query
+*.taobao.com = server:https://dns.alidns.com/dns-query
+*.tmall.com = server:https://dns.alidns.com/dns-query
+*.alipay.com = server:https://dns.alidns.com/dns-query
+*.alipayobjects.com = server:https://dns.alidns.com/dns-query
+*.mmstat.com = server:https://dns.alidns.com/dns-query
+*.alipay-corp.com = server:https://dns.alidns.com/dns-query
+*.alipay-eco.com = server:https://dns.alidns.com/dns-query
+*.alipay-inc.com = server:https://dns.alidns.com/dns-query
+*.alipay-traffic.com = server:https://dns.alidns.com/dns-query
+*.alipay.cn = server:https://dns.alidns.com/dns-query
+*.alipay.com.cn = server:https://dns.alidns.com/dns-query
+*.alipay.hk = server:https://dns.alidns.com/dns-query
+*.alipay.net = server:https://dns.alidns.com/dns-query
+*.alipaydesign.com = server:https://dns.alidns.com/dns-query
+*.alipaydev.com = server:https://dns.alidns.com/dns-query
+*.alipaydns.com = server:https://dns.alidns.com/dns-query
+*.alipayeshop.com = server:https://dns.alidns.com/dns-query
+*.alipaymo.com = server:https://dns.alidns.com/dns-query
+*.alipayplus.com = server:https://dns.alidns.com/dns-query
+*.ifaa.org.cn = server:https://dns.alidns.com/dns-query
+*.luohanacademy.com = server:https://dns.alidns.com/dns-query
+*.sinopayment.com.cn = server:https://dns.alidns.com/dns-query
+
 # --- Xiaohongshu CDN — use AliDNS DoH for domestic CDN resolution (encrypted) ---
 *.xiaohongshu.com = server:https://dns.alidns.com/dns-query
 *.xhscdn.com = server:https://dns.alidns.com/dns-query
