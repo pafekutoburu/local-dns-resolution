@@ -1,5 +1,5 @@
 #!name=🟦 Local DNS Resolution 🧭
-#!desc=Static DNS mappings for DoH servers (IPv4 only) + ByteDance/Tencent/Bilibili CDN domains use AliDNS DoH for correct resolution
+#!desc=Static DNS mappings for DoH servers (IPv4 only) + ByteDance/Tencent/Bilibili/Xiaohongshu CDN domains use AliDNS DoH for correct resolution
 #!author=PafekutoBuru
 #!category=🟦 PafekutoBuru
 #!homepage=https://github.com/pafekutoburu/local-dns-resolution
@@ -126,3 +126,10 @@ alt8-mtalk.google.com = 3.3.3.3
 *.qq.com = server:https://dns.alidns.com/dns-query
 *.tencent.com = server:https://dns.alidns.com/dns-query
 *.gtimg.com = server:https://dns.alidns.com/dns-query
+
+# --- Xiaohongshu CDN — use AliDNS DoH for domestic CDN resolution (encrypted) ---
+*.xiaohongshu.com = server:https://dns.alidns.com/dns-query
+*.xhscdn.com = server:https://dns.alidns.com/dns-query
+*.xhscdn.net = server:https://dns.alidns.com/dns-query
+*.fengkongcloud.com = server:https://dns.alidns.com/dns-query
+*.feng.com = server:https://dns.alidns.com/dns-query
