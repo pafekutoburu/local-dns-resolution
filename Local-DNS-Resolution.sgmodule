@@ -9,14 +9,20 @@
 # 2. ByteDance / 西瓜 / 抖音 CDN 域名用阿里 DoH (https://dns.alidns.com/dns-query) 解析 → 加密 + 拿到正确的国内 CDN IP
 
 [General]
-use-local-host-item-for-proxy = true
 
 [Host]
+bilibilihelper.com = server:https://dns.alidns.com/dns-query
+*.126.net = server:https://dns.alidns.com/dns-query
+*.baidu.com = server:https://dns.alidns.com/dns-query
+baidu.com = server:https://dns.alidns.com/dns-query
+*.nstool.netease.com = server:https://dns.alidns.com/dns-query
+interface.music.163.com = server:https://dns.alidns.com/dns-query
 # --- Encrypted DNS (DoH) servers ---
 dns.google = 8.8.8.8, 8.8.4.4
 cloudflare-dns.com = 104.16.249.249, 104.16.248.249
 1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1, 1.0.0.1
 one.one.one.one = 1.1.1.1, 1.0.0.1
+
 # dns.alidns.com 已移除静态映射 — 让 Surge 全局 DoH 正确解析其 DoH 端点 IP
 dns.alidns.com = 223.5.5.5, 223.6.6.6
 doh.pub = 1.12.12.21, 120.53.53.53
@@ -25,18 +31,6 @@ doh.360.cn = 111.7.73.60, 39.156.84.71, 221.181.72.233
 dot.360.cn = 111.7.73.60, 39.156.84.71, 221.181.72.233
 dns.twnic.tw = 101.101.101.101
 ordns.he.net = 59.24.3.173
-
-# --- Google FCM (Firebase Cloud Messaging) ---
-talk.google.com = 108.177.125.188
-mtalk.google.com = 108.177.125.188, 142.250.31.188
-alt1-mtalk.google.com = 3.3.3.3, 64.233.171.188
-alt2-mtalk.google.com = 3.3.3.3, 142.250.115.188
-alt3-mtalk.google.com = 74.125.200.188, 173.194.77.188
-alt4-mtalk.google.com = 74.125.200.188, 173.194.219.188
-alt5-mtalk.google.com = 3.3.3.3, 142.250.112.188
-alt6-mtalk.google.com = 3.3.3.3, 172.217.197.188
-alt7-mtalk.google.com = 74.125.200.188, 108.177.12.188
-alt8-mtalk.google.com = 3.3.3.3
 
 # --- ByteDance CDN — use AliDNS DoH for domestic CDN resolution (encrypted) ---
 *.amemv.com = server:https://dns.alidns.com/dns-query
